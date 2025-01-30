@@ -1,0 +1,38 @@
+/* src/components/Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem; /* Add padding to prevent content from touching the edges */
+  background-color: #333;
+  color: #fff;
+  width: 100%; /* Ensure the navbar spans the full width */
+  box-sizing: border-box; /* Include padding in the width calculation */
+  position: fixed; /* Optional: Fix the navbar at the top of the screen */
+  top: 0; /* Optional: Fix the navbar at the top */
+  left: 0; /* Optional: Fix the navbar at the top */
+  z-index: 1000; /* Optional: Ensure the navbar stays above other content */
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem; /* Add padding to links for better spacing */
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+}
